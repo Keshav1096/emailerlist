@@ -2,7 +2,7 @@ import React from "react";
 import { message } from "antd";
 
 const axios = require("axios");
-const backend_url = process.env.backend_url || "http://localhost:8080";
+const backend_url = process.env.REACT_APP_backend_url || "http://localhost:8080";
 
 export default function EmailForm() {
   const handleSubmit = (event) => {
